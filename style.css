@@ -1,3 +1,7 @@
-h1, p {
-  font-family: Lato;
+* {
+  background-color:black;
+  size:100000px;
+}
+#joinNow {
+  background-color: red;
 }
