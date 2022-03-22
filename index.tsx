@@ -41,7 +41,10 @@ render(<App />, document.getElementById('root'));
 let cum = document.getElementById("cum");
 
 const start = Date.now()
-let time = Date.now() - start;
-if(time === 1000) {
-  cum.textContent = "learn"
-}
+
+setTimeout(() => {
+  const millis = Date.now() - start;
+
+  console.log(`seconds elapsed = ${Math.floor(millis / 1000)}`);
+  // expected output: seconds elapsed = 2
+}, 2000);
