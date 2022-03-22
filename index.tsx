@@ -42,6 +42,6 @@ let cum = document.getElementById("cum");
 
 const start = Date.now()
 let time = Date.now() - start;
-if(time === 1) {
+if(time === 1000) {
   cum.textContent = "learn"
 }
