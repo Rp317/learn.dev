@@ -45,7 +45,6 @@ const start = Date.now()
 setTimeout(() => {
   const millis = Date.now() - start;
   Math.floor(millis / 1000);
-
+  cum.textContent = "learn"
   // expected output: seconds elapsed = 2
 }, 2000);
-cum.textContent = "learn"
