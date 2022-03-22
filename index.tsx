@@ -37,13 +37,11 @@ class App extends Component<AppProps, AppState> {
     );
   }
 }
-let cum:HTMLElement = document.getElementById("cum");
-function owo() {
-  const start = Date.now()
-  let time = Date.now() - start;
-  if(time === 1) {
-    cum.textContent = "learn"
-  }
-}
-cum!.addEventListener("focus", owo)
 render(<App />, document.getElementById('root'));
+let cum = document.getElementById("cum");
+
+const start = Date.now()
+let time = Date.now() - start;
+if(time === 1) {
+  cum.textContent = "learn"
+}
