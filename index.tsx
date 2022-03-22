@@ -17,9 +17,9 @@ class App extends Component<AppProps, AppState> {
           <button id="owo">log on</button>
         </div>
         <div id="information">
-          <h1>We are a business that teaches you how to <strong>learn/create/develop/push</strong></h1>
+          <h1>We are a business that teaches you how to <strong id="cum">learn/create/develop/push</strong></h1>
           <h1>We offer a <strong>var</strong>iety of languages including</h1>
-          <strong>javascript/python/typescript/node and many more</strong><button></button>
+          <h1>javascript/python/typescript/node and many more</h1><button></button>
         </div>
         <div id="weFrickingCare">We care for the customers as we give them 1 on 1 tutoring if they get stuck/need motovation</div>
         <div id="creator">The creator is a minority child who like to make this company for the people, not the dollar.</div>
@@ -37,5 +37,13 @@ class App extends Component<AppProps, AppState> {
     );
   }
 }
-
+let cum:HTMLElement = document.getElementById("cum");
+function owo() {
+  const start = Date.now()
+  let time = Date.now() - start;
+  if(time === 1) {
+    cum.textContent = "learn"
+  }
+}
+cum!.addEventListener("focus", owo)
 render(<App />, document.getElementById('root'));
