@@ -2,6 +2,27 @@
   background-color:black;
   size:100000px;
 }
-#joinNow {
-  background-color: red;
+#header {
+  background-color: grey;
+  align-items: center;
+  display: flex;
+  justify-content: baseline;
+}
+#logo {
+  font-family: monospace;
+}
+#o {
+  position: absolute;
+  right: 10px;
+  width:100px;
+}
+#ow {
+  position:absolute;
+  right:120px;
+  width:100px;
+}
+#owo {
+  position: absolute;
+  right: 230px;
+  width:100px;
 }

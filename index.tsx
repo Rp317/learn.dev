@@ -11,10 +11,10 @@ class App extends Component<AppProps, AppState> {
     return (
       <div id="page">
         <div id="header">
-          <h1>learn.dev</h1>
-          <button>info</button>
-          <button>sign up</button>
-          <button>log on</button>
+          <h1 id="logo">learn.dev</h1>
+          <button id="o">info</button>
+          <button id="ow">sign up</button>
+          <button id="owo">log on</button>
         </div>
         <div id="information">
           <h1>We are a business that teaches you how to <h1>learn/create/develop/push</h1></h1>
