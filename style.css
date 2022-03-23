@@ -9,20 +9,27 @@
   justify-content: baseline;
 }
 #logo {
+  background-color: grey;
   font-family: monospace;
 }
 #o {
   position: absolute;
+  background-color: grey;
   right: 10px;
   width:100px;
 }
 #ow {
   position:absolute;
+  background-color: grey;
   right:120px;
   width:100px;
 }
 #owo {
   position: absolute;
+  background-color: grey;
   right: 230px;
   width:100px;
+}
+#information {
+  color:grey;
 }
