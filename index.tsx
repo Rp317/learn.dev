@@ -39,6 +39,7 @@ class App extends Component<AppProps, AppState> {
 }
 render(<App />, document.getElementById('root'));
 let cum = document.getElementById("cum");
+const start = Date.now()
 let o = "push"
 function thing() {
   if(o === "push") {
@@ -67,4 +68,5 @@ function thing() {
     }, 2000);
   }
 }
-const start = Date.now()
+thing()
+
