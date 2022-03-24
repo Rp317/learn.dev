@@ -60,6 +60,6 @@ function bruh() {
   }, 2000);
 }
 let i = 0;
-while(i=0) {
+while(i===0) {
   thing()
 }
