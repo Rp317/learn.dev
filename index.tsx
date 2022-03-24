@@ -57,7 +57,7 @@ function bruh() {
    Math.floor(millis / 1000);
    cum.textContent = o
     // expected output: seconds elapsed = 2
-  }, 2000);
+  }, 2);
 }
 let i = 0;
 while(i===0) {
