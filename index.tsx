@@ -50,16 +50,19 @@ function thing() {
      cum.textContent = o
       // expected output: seconds elapsed = 2
     }, 2000);
+    thing()
+
   } else if(o === "create") {
     o = "develop"
     setTimeout(() => {
       const millis = Date.now() - start;
      Math.floor(millis / 1000);
      cum.textContent = o
+     thing()
+
       // expected output: seconds elapsed = 2
     }, 2000);
   } else if(o === "develop") {
-    o = "push"
     setTimeout(() => {
       const millis = Date.now() - start;
      Math.floor(millis / 1000);
@@ -67,6 +70,5 @@ function thing() {
       // expected output: seconds elapsed = 2
     }, 2000);
   }
-  thing()
 }
 thing()
