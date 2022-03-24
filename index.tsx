@@ -44,7 +44,6 @@ let o = "push"
 function thing() {
   if(o === "push") {
     o = "create"
-
   } else if(o === "create") {
     o = "develop"
   } else if(o === "develop") {
