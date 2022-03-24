@@ -39,22 +39,27 @@ class App extends Component<AppProps, AppState> {
 }
 render(<App />, document.getElementById('root'));
 let cum = document.getElementById("cum");
-
-const start = Date.now()
 let o = "push"
-let i = 0;
-while(i = 0) {
+function thing() {
+  if(o === "push") {
+    o = "create"
+  } else if(o === "create") {
+    o = "develop"
+  } else if(o === "develop") {
+    o = "push"
+  }
+}
+const start = Date.now()
+function bruh() {
+  thing()
   setTimeout(() => {
-   if(o === "push") {
-     o = "create"
-   } else if(o === "create") {
-      o = "develop"
-    } else if(o === "develop") {
-      o = "push"
-   }
     const millis = Date.now() - start;
    Math.floor(millis / 1000);
    cum.textContent = o
-   // expected output: seconds elapsed = 2
+    // expected output: seconds elapsed = 2
   }, 2000);
+}
+let i = 0;
+while(i=0) {
+  thing()
 }
