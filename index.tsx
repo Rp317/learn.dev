@@ -44,31 +44,16 @@ let o = "push"
 function thing() {
   if(o === "push") {
     o = "create"
-    setTimeout(() => {
-      const millis = Date.now() - start;
-     Math.floor(millis / 1000);
-     cum.textContent = o
-      // expected output: seconds elapsed = 2
-    }, 2000);
-    thing()
 
   } else if(o === "create") {
     o = "develop"
-    setTimeout(() => {
-      const millis = Date.now() - start;
-     Math.floor(millis / 1000);
-     cum.textContent = o
-
-
-      // expected output: seconds elapsed = 2
-    }, 2000);
   } else if(o === "develop") {
-    setTimeout(() => {
-      const millis = Date.now() - start;
-     Math.floor(millis / 1000);
-     cum.textContent = o
-      // expected output: seconds elapsed = 2
-    }, 2000);
   }
+  setTimeout(() => {
+    const millis = Date.now() - start;
+   Math.floor(millis / 1000);
+   cum.textContent = o
+    // expected output: seconds elapsed = 2
+  }, 2000);
 }
 thing()
