@@ -56,4 +56,6 @@ function thing() {
     // expected output: seconds elapsed = 2
   }, 2000);
 }
-thing()
+for (let i = 0; i < 2; i++) {
+  thing()
+}
