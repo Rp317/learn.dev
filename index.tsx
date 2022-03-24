@@ -17,7 +17,7 @@ class App extends Component<AppProps, AppState> {
           <button id="owo">log on</button>
         </div>
         <div id="information">
-          <h1>We are a business that teaches you how to <strong id="cum">create/develop/push</strong></h1>
+          <h1>We are a business that teaches you how to <strong id="cum">push</strong></h1>
           <h1>We offer a <strong>var</strong>iety of languages including</h1>
           <h1>javascript/python/typescript/node and many more</h1><button></button>
         </div>
@@ -56,6 +56,6 @@ function thing() {
     // expected output: seconds elapsed = 2
   }, 2000);
 }
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 3; i++) {
   thing()
 }
