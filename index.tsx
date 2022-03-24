@@ -58,7 +58,7 @@ function thing() {
       const millis = Date.now() - start;
      Math.floor(millis / 1000);
      cum.textContent = o
-     thing()
+
 
       // expected output: seconds elapsed = 2
     }, 2000);
