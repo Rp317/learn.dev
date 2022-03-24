@@ -43,23 +43,28 @@ let o = "push"
 function thing() {
   if(o === "push") {
     o = "create"
+    setTimeout(() => {
+      const millis = Date.now() - start;
+     Math.floor(millis / 1000);
+     cum.textContent = o
+      // expected output: seconds elapsed = 2
+    }, 2000);
   } else if(o === "create") {
     o = "develop"
+    setTimeout(() => {
+      const millis = Date.now() - start;
+     Math.floor(millis / 1000);
+     cum.textContent = o
+      // expected output: seconds elapsed = 2
+    }, 2000);
   } else if(o === "develop") {
     o = "push"
+    setTimeout(() => {
+      const millis = Date.now() - start;
+     Math.floor(millis / 1000);
+     cum.textContent = o
+      // expected output: seconds elapsed = 2
+    }, 2000);
   }
 }
 const start = Date.now()
-function bruh() {
-  thing()
-  setTimeout(() => {
-    const millis = Date.now() - start;
-   Math.floor(millis / 1000);
-   cum.textContent = o
-    // expected output: seconds elapsed = 2
-  }, 2);
-}
-let i = 0
-while(i === 0) {
-  thing()
-}
