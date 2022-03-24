@@ -17,7 +17,7 @@ class App extends Component<AppProps, AppState> {
           <button id="owo">log on</button>
         </div>
         <div id="information">
-          <h1>We are a business that teaches you how to <strong id="cum">learn/create/develop/push</strong></h1>
+          <h1>We are a business that teaches you how to <strong id="cum">create/develop/push</strong></h1>
           <h1>We offer a <strong>var</strong>iety of languages including</h1>
           <h1>javascript/python/typescript/node and many more</h1><button></button>
         </div>
@@ -41,10 +41,20 @@ render(<App />, document.getElementById('root'));
 let cum = document.getElementById("cum");
 
 const start = Date.now()
-
-setTimeout(() => {
-  const millis = Date.now() - start;
-  Math.floor(millis / 1000);
-  cum.textContent = "learn"
-  // expected output: seconds elapsed = 2
-}, 2000);
+let o = "push"
+let i = 0;
+while(i = 0) {
+  setTimeout(() => {
+   if(o === "push") {
+     o = "create"
+   } else if(o === "create") {
+      o = "develop"
+    } else if(o === "develop") {
+      o = "push"
+   }
+    const millis = Date.now() - start;
+   Math.floor(millis / 1000);
+   cum.textContent = o
+   // expected output: seconds elapsed = 2
+  }, 2000);
+}
