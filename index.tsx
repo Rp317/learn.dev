@@ -59,7 +59,6 @@ function bruh() {
     // expected output: seconds elapsed = 2
   }, 2);
 }
-let i = 0;
-while(i===0) {
+while(1) {
   thing()
 }
