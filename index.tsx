@@ -68,5 +68,6 @@ function thing() {
     }, 2000);
   }
 }
-thing()
-
+while(true) {
+  thing()
+}
