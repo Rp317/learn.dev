@@ -67,7 +67,6 @@ function thing() {
       // expected output: seconds elapsed = 2
     }, 2000);
   }
-}
-while(true) {
   thing()
 }
+thing()
