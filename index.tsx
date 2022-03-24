@@ -60,3 +60,6 @@ function bruh() {
   }, 2);
 }
 
+while(true) {
+  thing()
+}
